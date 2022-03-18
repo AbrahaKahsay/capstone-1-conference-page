@@ -8,7 +8,7 @@ const data = [
     name: 'Yochai Benkler',
     position: 'Berkman Professor of Entreprenurial Legal Studies of Harvard Law School',
     description: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-    
+
   },
   {
     // second card
@@ -30,7 +30,7 @@ const data = [
     image: 'images/speaker_04.png',
     name: 'Julia Leda',
     position: 'President of Young Pirates of Europe',
-    description: 'European ingetration, politicaal democracy and participation of youth through online as her major condem, Reda\'s\ report outlining potential changes to EU copy right law was approved by the parlament in July.',
+    description: 'European ingetration, politicaal democracy and participation of youth through online as her major condem, Reda report outlining potential changes to EU copy right law was approved by the parlament in July.',
   },
   {
     // fifth card
@@ -51,11 +51,11 @@ const data = [
 // looping through speakerSection to put the cards
 
 data.forEach((speakers) => {
-    const {
-      image, name, description, position,
-    } = speakers;
-  
-    const cardHTML = `<div class="card" id="card${counter + 1}">
+  const {
+    name, description, position,
+  } = speakers;
+
+  const cardHTML = `<div class="card" id="card${counter + 1}">
     <div class="card-image">
       <img
         class="image"
@@ -72,7 +72,6 @@ data.forEach((speakers) => {
     </div>
   </div>
       `;
-    speakerSection.insertAdjacentHTML('beforeend', cardHTML);
-    counter += 1;
-  });
-  
+  speakerSection.insertAdjacentHTML('beforeend', cardHTML);
+  counter += 1;
+});
