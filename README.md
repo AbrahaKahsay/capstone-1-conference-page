@@ -9,9 +9,10 @@
 
 ## Built With
 
-- HTML and CSS
+- HTML, CSS and javaScript
 - Frameworks: N/A
-- Technologies used: VS code, Fire fox web browser
+- Technologies used: VS code, Behance, Chrome, Fire fox web browser
+- Love
 
 👤 **Author**
 
