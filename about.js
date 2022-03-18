@@ -5,13 +5,13 @@ function openNav() {
     document.getElementById('navBar').style.width = '100%';
   }
   
-  function closeNav() {
+function closeNav() {
     document.getElementById('navBar').style.width = '0%';
   }
   
-     // add event listner to open and close buttons.
+  // add event listner to open and close buttons.
     
-     document.getElementById('hum').addEventListener('click', () => {
+ document.getElementById('hum').addEventListener('click', () => {
       openNav();
     });
     
