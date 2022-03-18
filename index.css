@@ -175,3 +175,161 @@ body {
 #card6 {
   display: none;
 }
+
+@media screen and (min-width: 768px) {
+  .mobile-navbar {
+    display: none;
+  }
+
+  .desktop-navbar {
+    display: flex;
+    padding: 0 20px;
+    margin: 5px 10%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dt-nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+  }
+
+  .invitation {
+    margin: 20px;
+    padding: 5px 10%;
+  }
+
+  .date-info,
+  .locate {
+    display: flex;
+    justify-content: center;
+  }
+
+  .message {
+    border: 4px solid var(--white);
+    padding: 1em 0.5em;
+  }
+
+  .dt-program-list-wrap {
+    display: flex;
+    padding: 0;
+    width: auto;
+    justify-content: space-between;
+    margin: 0 10%;
+  }
+
+  .program-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.1);
+    flex-wrap: wrap;
+  }
+
+  .main-program {
+    background-image: url(images/pattern_bg.png);
+    background-repeat: repeat;
+    background-color: var(--black);
+  }
+
+  .main-program-sub {
+    margin: 0 30px;
+    padding-top: 60px;
+  }
+
+  .main-program-sub h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .p-h4 {
+    color: rgb(239, 81, 60);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .p-p {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* feature speakers for desktop starts here */
+
+  .main-speaker-section {
+    margin: 5% 5%;
+  }
+
+  .featured-speakers {
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    justify-content: space-between;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+  }
+
+  .name {
+    margin: 10px;
+  }
+
+  .position {
+    margin: 10px;
+  }
+
+  .description {
+    margin: 10px;
+  }
+  /* feature speakers for desktop ends here */
+
+  .partners h1 {
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .guide_bar {
+    width: 53px;
+    border-bottom: 2px solid rgb(239, 81, 60);
+    margin: 0 auto 30px;
+  }
+
+  .dt-copy-right {
+    display: block;
+  }
+
+  .copy-right-about {
+    display: flex;
+    padding: 0 20px;
+    background-color: var(--gray);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cc {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+  }
+
+  /* temporary/ remove */
+  #card3,
+  #card4,
+  #card5,
+  #card6 {
+    display: flex;
+  }
+}
