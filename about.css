@@ -53,6 +53,13 @@ body {
   width: 20px;
 }
 
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 40%;
+}
+
 .title {
   width: 90%;
   display: flex;
@@ -156,4 +163,146 @@ body {
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+/* Adding mobile menu */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #272a31;
+    backdrop-filter: blur(3rem);
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .dt-nav-ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 18px;
+    width: 100%;
+    margin-top: 120px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .dt-nav-li {
+    padding: 8px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 40px;
+    color: white;
+  }
+
+  .m-menu-wrap {
+    height: 12px;
+    width: 18px;
+    margin-left: 3px;
+    margin-top: 6px;
+    padding-right: 36px;
+    color: #6070ff;
+    cursor: pointer;
+  }
+
+  .desktop-navbar {
+    display: none;
+  }
+}
+
+/* For desktop version */
+
+@media screen and (min-width: 768px) {
+  .mobile-navbar {
+    display: none;
+  }
+
+  .desktop-navbar {
+    display: flex;
+    padding: 0;
+    margin: 5px 10%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dt-nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    padding-left: 0;
+  }
+
+  .invitation {
+    margin: 20px;
+    padding: 5px 8%;
+  }
+
+  .picture-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .picture {
+    height: auto;
+    width: 100%;
+  }
+
+  .partners h1 {
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .guide_bar {
+    width: 53px;
+    border-bottom: 2px solid rgb(239, 81, 60);
+    margin: 0 auto 30px;
+  }
+
+  .dt-copy-right {
+    display: block;
+  }
+
+  .copy-right-about {
+    display: flex;
+    padding: 0 20px;
+    background-color: var(--gray);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cc {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+  }
+
+  /* temporary/ remove */
+  #card3,
+  #card4,
+  #card5,
+  #card6 {
+    display: flex;
+  }
 }
