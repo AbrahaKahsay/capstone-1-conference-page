@@ -47,3 +47,32 @@ const data = [
     description: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open source',
   },
 ];
+
+// looping through speakerSection to put the cards
+
+data.forEach((speakers) => {
+    const {
+      image, name, description, position,
+    } = speakers;
+  
+    const cardHTML = `<div class="card" id="card${counter + 1}">
+    <div class="card-image">
+      <img
+        class="image"
+        src="images/speaker_0${counter + 1}.png"
+        alt="Porfolio-image1"
+      />
+    </div>
+    <div class="personal-info">
+      
+        <h3 class="name">${name}</h3>
+        <p class="position">${position}</p>
+        <p class="description">${description}</p>
+     
+    </div>
+  </div>
+      `;
+    speakerSection.insertAdjacentHTML('beforeend', cardHTML);
+    counter += 1;
+  });
+  
