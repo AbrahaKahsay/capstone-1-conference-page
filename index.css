@@ -156,6 +156,7 @@ body {
   font-size: 20px;
   border-radius: 2px;
 }
+
 .logos {
   display: flex;
   margin-bottom: 30px;
@@ -292,6 +293,7 @@ body {
   .description {
     margin: 10px;
   }
+
   /* feature speakers for desktop ends here */
 
   .partners h1 {
