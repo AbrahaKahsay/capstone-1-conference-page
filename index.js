@@ -75,3 +75,14 @@ data.forEach((speakers) => {
   speakerSection.insertAdjacentHTML('beforeend', cardHTML);
   counter += 1;
 });
+
+//mobile menu
+// functions for changing the navbar or dropdown menu's style 
+
+function openNav() {
+  document.getElementById('navBar').style.width = '100%';
+}
+
+function closeNav() {
+  document.getElementById('navBar').style.width = '0%';
+}
