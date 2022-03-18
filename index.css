@@ -1,0 +1,178 @@
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "COCOGOOSE", sans-serif;
+}
+
+:root {
+  --black: #272a31;
+  --red: #ec5242;
+  --gray: #d3d3d3;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* @media screen and (max-width: 768px) */
+
+.main {
+  background-image: url(images/main_big.png);
+  background-repeat: repeat-x;
+}
+
+.mobile-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 16px;
+}
+
+.desktop-navbar {
+  display: none;
+}
+
+.m-menu-wrap {
+  display: flex;
+  justify-content: left;
+}
+
+.humberger {
+  width: 20px;
+}
+
+.title {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.invitation {
+  margin: 20px;
+}
+
+.date-info,
+.locate {
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  border: 4px solid var(--white);
+  padding: 1em 0.5em;
+}
+
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: stretch;
+  width: 100%;
+  position: relative;
+  margin: 20px;
+  padding: 16px 0;
+  background: var(--black);
+  flex: 1 1 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-program {
+  background-image: url(images/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: var(--black);
+}
+
+.main-program-sub {
+  margin: 0 30px;
+  padding-top: 60px;
+}
+
+.main-program-sub h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.partners h1 {
+  color: rgb(51, 51, 51);
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.guide_bar {
+  width: 53px;
+  border-bottom: 1px solid rgb(239, 81, 60);
+  margin: 0 auto 30px;
+}
+
+.p-i {
+  display: block;
+  justify-items: left;
+}
+
+.p-h4 {
+  display: flex;
+  color: rgb(239, 81, 60);
+  width: 30%;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.p-p {
+  display: flex;
+  color: rgb(255, 255, 255);
+  width: 50%;
+  padding-left: 5%;
+}
+
+.join-button {
+  display: flex;
+  justify-content: center;
+}
+
+.join-btn {
+  background-color: var(--red);
+  padding: 10px;
+  margin: 2%;
+  font-size: 20px;
+  border-radius: 2px;
+}
+
+.logos {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.logos img {
+  width: 100%;
+}
+
+.dt-copy-right {
+  display: none;
+}
+
+#card3,
+#card4,
+#card5,
+#card6 {
+  display: none;
+}
