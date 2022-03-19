@@ -69,6 +69,14 @@ body {
   display: flex;
   justify-content: center;
   padding-left: 10px;
+  color: var(--red);
+}
+
+.hello {
+  color: var(--red);
+  line-height: 18px;
+  font-weight: lighter;
+  font-size: 24px;
 }
 
 .invitation {
@@ -292,6 +300,18 @@ body {
     padding: 5px 8%;
   }
 
+  .title {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    color: var(--red);
+  }
+
+  .hello {
+    display: none;
+  }
+  
   .picture-wrap {
     display: flex;
     flex-direction: row;
