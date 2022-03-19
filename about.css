@@ -355,7 +355,7 @@ body {
     color: var(--white);
   }
 
-  br {
+  .br1 {
     display: none;
   }
 
