@@ -83,8 +83,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: stretch;
-  width: 100%;
+  width: 90%;
   position: relative;
   margin: 20px;
   padding: 16px 0;
@@ -97,11 +96,12 @@ body {
   background-image: url(images/pattern_bg.png);
   background-repeat: repeat;
   background-color: var(--black);
+  margin: 0;
 }
 
 .main-program-sub {
   margin: 0 30px;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 .main-program-sub h1 {
@@ -111,11 +111,26 @@ body {
   font-size: 24px;
 }
 
+.partners {
+  background: #404247;
+}
+
+.partner h1 {
+  color: var(--white);
+}
+
+.partner_logos {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
 .partners h1 {
-  color: rgb(51, 51, 51);
+  color: var(--white);
   text-align: center;
   font-weight: 400;
   font-size: 24px;
+  padding-top: 10px;
 }
 
 .guide_bar {
@@ -147,23 +162,20 @@ body {
 .join-button {
   display: flex;
   justify-content: center;
+  padding-left: 0;
 }
 
 .join-btn {
   background-color: var(--red);
   padding: 10px;
   margin: 2%;
-  font-size: 20px;
+  font-size: 14px;
   border-radius: 2px;
 }
 
-.logos {
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.logos img {
-  width: 100%;
+.cc-nav-btn {
+  border: 1px solid red;
+  color: #ec5242;
 }
 
 .dt-copy-right {
@@ -177,6 +189,50 @@ body {
   display: none;
 }
 
+.more {
+  display: block;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-speaker-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.featured-speakers {
+  text-align: center;
+}
+
+.name {
+  margin: 10px;
+}
+
+.position {
+  margin: 10px;
+  color: #ec5242;
+}
+
+.description {
+  margin: 10px;
+}
+
+.see-desk {
+  display: none;
+}
+
 /* Adding mobile menu */
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -186,7 +242,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background: #272a31;
+    background: #6070ff;
     backdrop-filter: blur(3rem);
     opacity: 0.9;
     overflow-x: hidden;
@@ -300,7 +356,7 @@ body {
 
   .main-program-sub {
     margin: 0 30px;
-    padding-top: 60px;
+    padding-top: 20px;
   }
 
   .main-program-sub h1 {
@@ -312,7 +368,7 @@ body {
     color: rgb(239, 81, 60);
     text-align: center;
     width: 100%;
-    margin: 0;
+    margin: 10px 0;
   }
 
   .p-p {
@@ -322,9 +378,28 @@ body {
     margin: 0;
   }
 
+  .join-button {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .join-btn {
+    display: none;
+  }
+
+  .see-desk {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    color: var(--white);
+    text-decoration: underline;
+  }
+
   /* feature speakers for desktop starts here */
 
-  .main-speaker-section {
+  .main-speakers {
     margin: 5% 5%;
   }
 
@@ -333,16 +408,17 @@ body {
   }
 
   .card {
-    display: flex;
-    flex-direction: row;
-    padding: 2%;
-    justify-content: space-between;
+    display: block;
+    height: 100%;
   }
 
   .personal-info {
     display: flex;
     flex-direction: column;
-    padding: 0 2%;
+  }
+
+  .card-image {
+    float: left;
   }
 
   .name {
@@ -351,19 +427,29 @@ body {
 
   .position {
     margin: 10px;
+    color: #ec5242;
   }
 
   .description {
     margin: 10px;
   }
 
+  .main-speaker-section {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+
   /* feature speakers for desktop ends here */
 
   .partners h1 {
-    color: rgb(51, 51, 51);
+    color: var(--white);
     text-align: center;
     font-weight: 400;
-    font-size: 24px;
+    padding-top: 10px;
   }
 
   .guide_bar {
@@ -379,7 +465,7 @@ body {
   .copy-right-about {
     display: flex;
     padding: 0 20px;
-    background-color: var(--gray);
+    background-color: var(--white);
     justify-content: center;
     align-items: center;
   }
@@ -396,5 +482,9 @@ body {
   #card5,
   #card6 {
     display: flex;
+  }
+
+  .more {
+    display: none;
   }
 }

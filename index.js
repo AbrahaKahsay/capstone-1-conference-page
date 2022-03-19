@@ -55,7 +55,8 @@ data.forEach((speakers) => {
     name, description, position,
   } = speakers;
 
-  const cardHTML = `<div class="card" id="card${counter + 1}">
+  const cardHTML = `<div class="cards-wrap">
+  <div class="card" id="card${counter + 1}">
     <div class="card-image">
       <img
         class="image"
@@ -70,6 +71,7 @@ data.forEach((speakers) => {
         <p class="description">${description}</p>
      
     </div>
+   </div>
   </div>
       `;
   speakerSection.insertAdjacentHTML('beforeend', cardHTML);

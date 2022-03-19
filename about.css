@@ -101,6 +101,8 @@ body {
 }
 
 .title-creative,
+.creative-text,
+.past-text,
 .title-past {
   text-align: center;
   color: #272a31;
@@ -117,7 +119,7 @@ body {
 .picture-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .picture {
@@ -129,26 +131,32 @@ body {
   margin: auto;
 }
 
+.cc-nav-btn {
+  border: 1px solid red;
+  color: #ec5242;
+}
+
+.partners {
+  background: #404247;
+}
+
+.partner_logos {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
 .partners h1 {
-  color: rgb(51, 51, 51);
+  color: var(--white);
   text-align: center;
   font-weight: 400;
-  font-size: 24px;
+  padding-top: 10px;
 }
 
 .guide_bar {
   width: 53px;
   border-bottom: 2px solid rgb(239, 81, 60);
   margin: 0 auto 24px;
-}
-
-.logos {
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.logos img {
-  width: 100%;
 }
 
 .copy-right-about {
@@ -174,7 +182,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background: #272a31;
+    background: #6070ff;
     backdrop-filter: blur(3rem);
     opacity: 0.9;
     overflow-x: hidden;
@@ -268,7 +276,7 @@ body {
   }
 
   .partners h1 {
-    color: rgb(51, 51, 51);
+    color: var(--white);
     text-align: center;
     font-weight: 400;
     font-size: 24px;
