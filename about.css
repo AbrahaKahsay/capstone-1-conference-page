@@ -174,9 +174,10 @@ body {
 .copy-right-about {
   display: flex;
   padding: 0 20px;
-  background-color: var(--gray);
+  background-color: var(--white);
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .cc {
@@ -311,7 +312,7 @@ body {
   .hello {
     display: none;
   }
-  
+
   .picture-wrap {
     display: flex;
     flex-direction: row;
@@ -321,6 +322,10 @@ body {
   .picture {
     height: auto;
     width: 100%;
+  }
+
+  .partners-wrap {
+    display: none;
   }
 
   .partners h1 {
@@ -343,22 +348,21 @@ body {
   .copy-right-about {
     display: flex;
     padding: 0 20px;
-    background-color: var(--gray);
+    background-color: var(--black);
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    color: var(--white);
+  }
+
+  br {
+    display: none;
   }
 
   .cc {
     display: flex;
     align-items: center;
     gap: 10%;
-  }
-
-  /* temporary/ remove */
-  #card3,
-  #card4,
-  #card5,
-  #card6 {
-    display: flex;
+    color: var(--white);
   }
 }
