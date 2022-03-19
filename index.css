@@ -85,7 +85,7 @@ body {
 
 .program-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   width: 90%;
   position: relative;
