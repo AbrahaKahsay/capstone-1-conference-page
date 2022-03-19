@@ -194,8 +194,21 @@ body {
 }
 
 .more {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.more-btn {
   display: block;
   text-align: center;
+  width: 40%;
+  padding: 8px;
+}
+
+.fa {
+  color: var(--red);
+  font-size: 20px;
 }
 
 .card {
