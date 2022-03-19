@@ -7,6 +7,8 @@
 
 ![screen-shot-desktop](https://user-images.githubusercontent.com/75738563/159032954-e9d609bc-0d90-470f-a93e-e03c359a6218.png)
 ![screen-shot-mobile](https://user-images.githubusercontent.com/75738563/159033360-38c734bd-7372-4ead-b50f-52801e012d6b.png)
+## Check on github pages
+https://abrahakahsay.github.io/capstone-1-conference-page/
 
 ## Built With
 
