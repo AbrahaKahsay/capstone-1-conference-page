@@ -182,7 +182,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background: #6070ff;
+    background: #777fca;
     backdrop-filter: blur(3rem);
     opacity: 0.9;
     overflow-x: hidden;
