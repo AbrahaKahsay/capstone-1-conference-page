@@ -35,6 +35,10 @@ body {
   background-repeat: repeat-x;
 }
 
+.top-nav {
+  display: none;
+}
+
 .mobile-navbar {
   display: flex;
   flex-direction: row;
@@ -241,6 +245,30 @@ body {
 @media screen and (min-width: 768px) {
   .mobile-navbar {
     display: none;
+  }
+
+  .top-nav {
+    display: flex;
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  .top-nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .top-nav ul li {
+    padding: 5px 10px;
+  }
+
+  .top-nav ul li a {
+    color: var(--white);
   }
 
   .desktop-navbar {
