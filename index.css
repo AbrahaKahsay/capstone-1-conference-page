@@ -1,0 +1,531 @@
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "COCOGOOSE", sans-serif;
+}
+
+:root {
+  --black: #272a31;
+  --red: #ec5242;
+  --gray: #d3d3d3;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* @media screen and (max-width: 768px) */
+
+.main {
+  background-image: url(images/main_big.png);
+  background-repeat: repeat-x;
+}
+
+.mobile-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 16px;
+}
+
+.desktop-navbar {
+  display: none;
+}
+
+.top-nav {
+  display: none;
+}
+
+.m-menu-wrap {
+  display: flex;
+  justify-content: left;
+}
+
+.humberger {
+  width: 20px;
+}
+
+.title {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.invitation {
+  margin: 20px;
+}
+
+.date-info,
+.locate {
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  border: 4px solid var(--white);
+  padding: 1em 0.5em;
+}
+
+.program-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 90%;
+  position: relative;
+  margin: 20px;
+  padding: 16px 0;
+  background: var(--black);
+  flex: 1 1 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-program {
+  background-image: url(images/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: var(--black);
+  margin: 0;
+}
+
+.main-program-sub {
+  margin: 0 30px;
+  padding-top: 20px;
+}
+
+.main-program-sub h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.partners {
+  background: #404247;
+}
+
+.partner h1 {
+  color: var(--white);
+}
+
+.partner_logos {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.partners h1 {
+  color: var(--white);
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.guide_bar {
+  width: 53px;
+  border-bottom: 1px solid rgb(239, 81, 60);
+  margin: 0 auto 30px;
+}
+
+.p-i {
+  display: block;
+  justify-items: left;
+}
+
+.p-h4 {
+  display: flex;
+  color: rgb(239, 81, 60);
+  width: 30%;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.p-p {
+  display: flex;
+  color: rgb(255, 255, 255);
+  width: 50%;
+  padding-left: 5%;
+}
+
+.join-button {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.join-btn {
+  background-color: var(--red);
+  padding: 10px;
+  margin: 2%;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.cc-nav-btn {
+  border: 1px solid red;
+  color: #ec5242;
+}
+
+.dt-copy-right {
+  display: none;
+}
+
+#card3,
+#card4,
+#card5,
+#card6 {
+  display: none;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.more-btn {
+  display: block;
+  text-align: center;
+  width: 40%;
+  padding: 8px;
+}
+
+.fa-angle-down {
+  color: var(--red);
+  font-size: 20px;
+}
+
+.card {
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-speaker-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.featured-speakers {
+  text-align: center;
+}
+
+.name {
+  margin: 10px;
+}
+
+.position {
+  margin: 10px;
+  color: #ec5242;
+}
+
+.description {
+  margin: 10px;
+}
+
+.see-desk {
+  display: none;
+}
+
+/* Adding mobile menu */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #777fca;
+    backdrop-filter: blur(3rem);
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .dt-nav-ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 18px;
+    width: 100%;
+    margin-top: 120px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .dt-nav-li {
+    padding: 8px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 40px;
+    color: white;
+  }
+
+  .m-menu-wrap {
+    height: 12px;
+    width: 18px;
+    margin-left: 3px;
+    margin-top: 6px;
+    padding-right: 36px;
+    color: #6070ff;
+    cursor: pointer;
+  }
+
+  .desktop-navbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-navbar {
+    display: none;
+  }
+
+  .top-nav {
+    display: flex;
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  .top-nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .top-nav ul li {
+    padding: 5px 10px;
+  }
+
+  .top-nav ul li a {
+    color: var(--white);
+  }
+
+  .desktop-navbar {
+    display: flex;
+    padding: 0 20px;
+    margin: 5px 10%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dt-nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+  }
+
+  .invitation {
+    margin: 20px;
+    padding: 5px 10%;
+  }
+
+  .date-info,
+  .locate {
+    display: flex;
+    justify-content: center;
+  }
+
+  .message {
+    border: 4px solid var(--white);
+    padding: 1em 0.5em;
+  }
+
+  .dt-program-list-wrap {
+    display: flex;
+    padding: 0;
+    width: auto;
+    justify-content: space-between;
+    margin: 0 10%;
+  }
+
+  .program-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.1);
+    flex-wrap: wrap;
+  }
+
+  .main-program {
+    background-image: url(images/pattern_bg.png);
+    background-repeat: repeat;
+    background-color: var(--black);
+  }
+
+  .main-program-sub {
+    margin: 0 30px;
+    padding-top: 20px;
+  }
+
+  .main-program-sub h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .p-h4 {
+    color: rgb(239, 81, 60);
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .p-p {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .join-button {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .join-btn {
+    display: none;
+  }
+
+  .see-desk {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    color: var(--white);
+    text-decoration: underline;
+  }
+
+  /* feature speakers for desktop starts here */
+
+  .main-speakers {
+    margin: 5% 5%;
+  }
+
+  .featured-speakers {
+    text-align: center;
+  }
+
+  .card {
+    display: block;
+    height: 100%;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-image {
+    float: left;
+  }
+
+  .name {
+    margin: 10px;
+  }
+
+  .position {
+    margin: 10px;
+    color: #ec5242;
+  }
+
+  .description {
+    margin: 10px;
+  }
+
+  .main-speaker-section {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+
+  /* feature speakers for desktop ends here */
+
+  .partners h1 {
+    color: var(--white);
+    text-align: center;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+
+  .guide_bar {
+    width: 53px;
+    border-bottom: 2px solid rgb(239, 81, 60);
+    margin: 0 auto 30px;
+  }
+
+  .dt-copy-right {
+    display: block;
+  }
+
+  .copy-right-about {
+    display: flex;
+    padding: 0 20px;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cc {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+  }
+
+  /* temporary/ remove */
+  #card3,
+  #card4,
+  #card5,
+  #card6 {
+    display: flex;
+  }
+
+  .more {
+    display: none;
+  }
+}
